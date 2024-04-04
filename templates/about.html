@@ -1,0 +1,46 @@
+{% extends "import.html" %} {% block content %}
+<div class="container">
+<div class="accordion mt-5" id="accordionExample">
+    <div class="accordion-item" >
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Abstract:
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            The accurate segmentation and prognosis of brain tumours play a pivotal role in guiding clinical decision-making and optimizing patient care. In this research endeavour, we propose an innovative approach that integrates multiple imaging modalities for brain tumor segmentation while leveraging prognostic information for informed treatment strategies. Our project revolves around the premise of multi-modal fusion, which involves the fusion of information derived from distinct imaging modalities such as MRI scans with varying contrasts (T1, T2, FLAIR), DTI (Diffusion Tensor Imaging), and possibly functional imaging like PET or SPECT. This fusion process is orchestrated by advanced deep learning architectures that are specifically tailored to capture cross-modal information. Moreover, the incorporation of prognostic data into the segmentation framework elevates the utility of the system. By integrating demographic, clinical, and possibly genomic information, our project aspires to provide valuable insights into the tumour’s behaviour, response to treatment, and long-term prognosis. This holistic approach helps medical practitioners in the formulation of tailored treatment regimens. As we strive to bridge the gap between cutting-edge technological advancements and clinical exigencies, our research is driven by the Sustainable Development Goals (SDGs), specifically addressing Health Care (SDG 3) through improved patient outcomes. In summary, our project presents an interdisciplinary amalgamation of medical imaging, machine learning, and clinical insights, resulting in a comprehensive solution for brain tumor segmentation and prognosis. By fusing multi-modal imaging data and prognostic indicators, we envision a paradigm shift in the way brain tumors are diagnosed, monitored, and treated, ultimately contributing to more effective patient care and medical research.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Introduction:
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            Brain tumors constitute a critical challenge in the field of medical diagnosis and treatment. The accurate delineation of tumor regions and the ability to predict their behaviour are essential for effective patient management and optimized therapeutic interventions. This research endeavour proposes a novel solution through the integration of multi-modal imaging and prognostic insights. Medical imaging, particularly Magnetic Resonance Imaging (MRI), has revolutionized the visualization of internal structures within the human body. Different MRI modalities offer complementary information about tissue characteristics, such as T1-weighted, T2-weighted, and FLAIR images, each highlighting distinct features of brain tissue and pathology. Additionally, techniques like Diffusion Tensor Imaging (DTI) contribute insights into tissue microstructure and connectivity. However, the complexity of brain tumors demands a more comprehensive approach that extends beyond segmentation. This research capitalizes on the integration of not only multi-modal imaging data but also prognostic indicators encompassing clinical information. This holistic approach seeks to bridge the gap between imaging and clinical insights, enabling medical practitioners to make well-informed decisions tailored to each patient's unique circumstances. The core innovation of this project lies in the fusion of multi-modal data and prognostic information using advanced machine learning techniques. Deep learning architectures specifically designed for multi-modal data fusion enable the extraction of comprehensive and contextually rich representations. This research aligns with the Sustainable Development Goals (SDGs). Primarily, it addresses Goal 3: Good Health and Well-being, by advancing the capabilities of medical professionals to provide accurate diagnoses and prognosis predictions, which are fundamental for delivering effective healthcare. As the journey unfolds, this research aspires to revolutionize the landscape of brain tumor diagnosis and prognosis. By synergizing the power of multi-modal imaging, we aim to create a comprehensive solution that not only aids medical practitioners in accurate tumor delineation but also empowers them with the foresight to formulate personalized treatment strategies, ultimately leading to improved patient outcomes and a deeper understanding of the intricate dynamics of brain tumors.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          How to use our website:
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+                <li>Upload your MRI scan in the Home page by clicking on <strong>Choose Image</strong> button.</li>
+                <li>Once the image is displayed on the screen, click on the <strong>Predict</strong> button.</li>
+                <li>The result of the prediction is displayed on the screen.</li>
+            </ul>   
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
